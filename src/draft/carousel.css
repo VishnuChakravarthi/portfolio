@@ -1,0 +1,75 @@
+.Banner {
+  height: auto;
+  position: relative;
+  box-shadow: none !important;
+}
+.Banner .Media {
+  background-color: white;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  transition: 300ms;
+  cursor: pointer;
+}
+.Banner .Media .MediaCaption {
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  width: 100%;
+  height: 10%;
+  font-size: 24px;
+  font-weight: 200;
+  transition: 300ms;
+  cursor: pointer;
+}
+.Banner .Media .MediaCaption:hover {
+  opacity: 0.8;
+}
+.Banner .Media:hover {
+  /* filter: brightness(115%); */
+}
+.Banner .BannerGrid {
+  height: 200px;
+}
+.Banner .Content {
+  color: black;
+  background-color: white;
+  height: 100%;
+  cursor: pointer;
+  /* padding: 30px; */
+  transition: 300ms;
+}
+.Banner .Content:hover,
+.Banner .Content:active {
+  background-color: white;
+}
+/* .Banner .Content:hover .ViewButton,
+.Banner .Content:active .ViewButton {
+  background-color: white;
+  color: black;
+} */
+.Banner .Content .Title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.Banner .Content .Caption {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.Banner .Content .ViewButton {
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+  border: 3px solid white;
+  text-transform: capitalize;
+  transition: 200ms;
+  font-size: 12px;
+}
+
+.Banner .Content .Languages {
+  font-size: 12px;
+}
