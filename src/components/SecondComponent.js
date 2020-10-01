@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   secdesc: {
     lineHeight: "1.1rem",
-    fontSize: "0.65rem",
+    fontSize: "0.75rem",
     color: "#828080",
   },
   maindescletter: {
@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
 const SecondComponent = ({ scrollLock, setScrollLock }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  console.log(scrollLock);
 
   const modalOpen = () => {
     setOpen(true);
@@ -99,7 +98,7 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
               <Button
                 size="small"
                 onClick={() => modalOpen()}
-                style={{ fontSize: 12 }}
+                style={{ fontSize: 14 }}
               >
                 Learn More
               </Button>

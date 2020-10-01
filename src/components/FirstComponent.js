@@ -13,6 +13,9 @@ import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    paddingBottom: theme.spacing(4),
+  },
+  card: {
     right: 20,
     top: 100,
     height: "100%",
@@ -44,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   secdesc: {
     color: "#828080",
-    fontSize: "0.65rem",
+    fontSize: "0.75rem",
     lineHeight: "1.1rem",
   },
   maindescletter: {
@@ -63,15 +66,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const FirstComponent = () => {
+const FirstComponent = ({ setScrollLock }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
   return (
     <div className="component first-component">
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className={classes.root}>
         <Grid item xs={12} sm={7}>
-          <Card className={classes.root}>
+          <Card className={classes.card}>
             <CardContent className={classes.cardcontent}>
               <Typography
                 variant="h5"
@@ -105,8 +108,13 @@ const FirstComponent = () => {
         </Grid>
       </Grid>
       {open ? (
-        <InfoModal heading="Objective" open={open} setOpen={setOpen}>
-          <p></p>
+        <InfoModal
+          heading="Objective"
+          open={open}
+          setOpen={setOpen}
+          setScrollLock={setScrollLock}
+        >
+          <p>Still pending</p>
         </InfoModal>
       ) : null}
     </div>

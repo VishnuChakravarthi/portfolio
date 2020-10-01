@@ -15,7 +15,7 @@ const App = () => {
         blockScrollUp={scrollLock}
         blockScrollDown={scrollLock}
       >
-        <FirstComponent />
+        <FirstComponent setScrollLock={setScrollLock} />
 
         <SecondComponent setScrollLock={setScrollLock} />
 

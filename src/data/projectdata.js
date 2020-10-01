@@ -3,8 +3,18 @@ import blogWS from "../img/blogWS.png";
 import navigationWS from "../img/navigationWS.png";
 import seasonWS from "../img/seasonWS.jpg";
 import ytWS from "../img/ytWS.jpg";
+import dictionaryWS from "../img/dictionaryWS.png";
+import twitchWS from "../img/twitchWS.png";
 
 export const projectdata = [
+  // {
+  //   Name: "Dictionary App",
+  //   Caption: "Adding and viewing words from Oxford Api",
+  //   Languages: "React NodeJs",
+  //   ItemName: "Image Display App",
+  //   Image: dictionaryWS,
+  //   Href: "https://dictionary-app.vercel.app/",
+  // },
   {
     Name: "Image App",
     Caption: "Displaying image from external api",
@@ -20,6 +30,14 @@ export const projectdata = [
     contentPosition: "left",
     Image: ytWS,
     Href: "https://ytclone-hooks.vercel.app/",
+  },
+  {
+    Name: "Twitch Clone",
+    Caption: "Streaming live videos like twitch",
+    Languages: "React Redux NodeJs",
+    ItemName: "Image Display App",
+    Image: twitchWS,
+    Href: "https://dictionary-app.vercel.app/",
   },
   {
     Name: "Season Display",

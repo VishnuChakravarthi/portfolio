@@ -5,6 +5,7 @@ import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
+    fontFamily: "ROBOTO",
     position: "absolute",
     outline: 0,
     minWidth: "75%",

@@ -15,20 +15,20 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     alignItems: "center",
     justifyContent: "center",
-    height: `calc(100% - 50px)`,
+    height: `calc(80% - 50px)`,
     overflowY: "scroll",
     fontFamily: "ROBOTO",
+    padding: theme.spacing(4),
   },
   paper: {
     textAlign: "center",
     color: theme.palette.text.primary,
-    boxShadow: "none",
   },
   img: {
     width: "100%",
   },
   desc: {
-    fontSize: "0.65rem",
+    fontSize: "0.75rem",
   },
 }));
 
@@ -46,7 +46,7 @@ const FourthComponent = ({ setScrollLock }) => {
   return (
     <div className="component fourth-component">
       <Grid container spacing={2} className={classes.root}>
-        <Grid item xs={12} sm>
+        <Grid item xs={12} sm onTouchStart={() => scrollLockRelease()}>
           <Typography variant="h5" component="h2" style={{ textAlign: "left" }}>
             Projects
           </Typography>
@@ -57,6 +57,7 @@ const FourthComponent = ({ setScrollLock }) => {
           spacing={4}
           onMouseOver={() => scrollLock()}
           onMouseEnter={() => scrollLock()}
+          onTouchStart={() => scrollLock()}
           onMouseLeave={() => scrollLockRelease()}
           // onScroll={(e) => handleScroll(e)}
         >
@@ -115,11 +116,11 @@ const FourthComponent = ({ setScrollLock }) => {
                             style={{
                               color: "black",
                               textDecoration: "none",
-                              fontSize: 12,
+                              fontSize: 14,
                             }}
                           >
                             {" "}
-                            View work
+                            View work -->>
                           </a>
                         </Grid>
                       </Grid>
