@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
+// import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import InfoModal from "./InfoModal";
 
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   secdesc: {
     color: "#828080",
-    fontSize: "0.75rem",
+    fontSize: "0.85rem",
     lineHeight: "1.1rem",
   },
   maindescletter: {
@@ -88,17 +88,17 @@ const FirstComponent = ({ setScrollLock }) => {
                 component="p"
                 className={classes.secdesc}
               >
-                "If I had eight hours to chop down a tree, I'd spend six
-                sharpening my axe".
-                <br />
-                Planning and preparation is everything.
+                "A great leader’s courage to fulfill his vision comes from
+                passion, not position.".
+                {/* <br /> */}
+                {/* Planning and preparation is everything. */}
               </Typography>
             </CardContent>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" onClick={() => setOpen(true)}>
                 Learn More
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </Grid>
         <Grid item xs={12} sm={5} style={{ overflow: "hidden" }}>

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
+// import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import headshot from "../img/owner.jpg";
 import InfoModal from "./InfoModal";
-import Education from "./Education";
+import Certification from "./Certification";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,8 +40,8 @@ const useStyles = makeStyles((theme) => ({
     width: "60%",
   },
   secdesc: {
-    lineHeight: "1.1rem",
-    fontSize: "0.75rem",
+    lineHeight: "1.3rem",
+    fontSize: "0.85rem",
     color: "#828080",
   },
   maindescletter: {
@@ -58,16 +58,24 @@ const useStyles = makeStyles((theme) => ({
   pos: {
     marginBottom: 12,
   },
+  contact: {
+    color: "black",
+    paddingBottom: "10px",
+  },
+  degree: {
+    fontStyle: "italic",
+    fontSize: "0.85rem",
+  },
 }));
 
 const SecondComponent = ({ scrollLock, setScrollLock }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
-  const modalOpen = () => {
-    setOpen(true);
-    setScrollLock(true);
-  };
+  // const modalOpen = () => {
+  //   setOpen(true);
+  //   setScrollLock(true);
+  // };
 
   return (
     <div className="component second-component">
@@ -80,7 +88,15 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
                 component="h2"
                 className={classes.maindesc}
               >
-                N Vishnu Chakravarthi
+                N Vishnu Chakravarthi{" "}
+                <span className={classes.degree}>B.E, M.Sc.(U.K.)</span>
+              </Typography>
+              <Typography
+                variant="body2"
+                component="p"
+                className={classes.contact}
+              >
+                nvishnuchakravarthi@gmail.com | +91 9944893026
               </Typography>
               <Typography
                 variant="body2"
@@ -90,11 +106,11 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
                 Passionate, reliable and detailed-oriented individual looking to
                 work as software engineer.
                 <br />
-                Offering expertise in Java, React Js, JavaScript, HTML, CSS and
+                Offering expertise in React Js, Java, JavaScript, HTML, CSS and
                 core web design.
               </Typography>
             </CardContent>
-            <CardActions>
+            {/* <CardActions>
               <Button
                 size="small"
                 onClick={() => modalOpen()}
@@ -102,7 +118,7 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
               >
                 Learn More
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </Grid>
         <Grid className={classes.root} item xs={12} sm>
@@ -120,7 +136,8 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
           setOpen={setOpen}
           setScrollLock={setScrollLock}
         >
-          <Education />
+          {/* <Education /> */}
+          <Certification />
         </InfoModal>
       ) : null}
     </div>

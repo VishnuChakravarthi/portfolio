@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "ROBOTO",
     position: "absolute",
     outline: 0,
-    minWidth: "75%",
+    // minWidth: "75%",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
@@ -33,7 +33,7 @@ const InfoModal = ({ heading, open, setOpen, setScrollLock, children }) => {
   const modalbody = (
     <div className={classes.paper}>
       <CloseIcon className={classes.closeicon} onClick={() => modalClose()} />
-      <h2 id="simple-modal-title">{heading}</h2>
+
       <div id="simple-modal-description">
         <div className={classes.modalbuttongroup}>{children}</div>
       </div>
