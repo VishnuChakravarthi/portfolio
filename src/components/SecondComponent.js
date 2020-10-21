@@ -5,7 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
-import headshot from "../img/owner.jpg";
+import headshot from "../img/owner2.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -105,7 +105,7 @@ const SecondComponent = ({ setScrollLock }) => {
         <Grid className={classes.root} item xs={12} sm>
           <Card className={classes.card2}>
             <CardContent className={classes.cardcontent}>
-              <img alt="Owners pho" src={headshot} />
+              <img alt="Owners pho" width="250" height="250" src={headshot} />
             </CardContent>
           </Card>
         </Grid>

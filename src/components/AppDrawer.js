@@ -8,6 +8,7 @@ import {
   faGithub,
   faInstagram,
   faTwitter,
+  faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
 
 const drawerWidth = "8%";
@@ -74,6 +75,14 @@ const AppDrawer = () => {
           href="https://github.com/VishnuChakravarthi"
         >
           <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://medium.com/@vishnuchakravarthi10"
+          className={classes.icon}
+        >
+          <FontAwesomeIcon icon={faMediumM} />
         </a>
         <a
           className={classes.icon}
