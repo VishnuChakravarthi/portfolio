@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     overflowY: "scroll",
     overflowX: "hidden",
     /* width: 92%; */
+    marginTop: "-10px",
     display: "flex",
     flexDirection: "column",
     padding: "20px",
@@ -79,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
   //   },
   headerFloat: {
     position: "absolute",
-    top: "200%",
+    top: "299%",
     zIndex: 1,
     width: "90%",
     background: "white",
@@ -176,8 +177,8 @@ const FinalComponent = ({ setScrollLock }) => {
   const handleScroll = (event) => {
     setScrollLock(true);
     const target = event.target;
+    // console.log(target.scrollTop);
     if (target.scrollTop === 0) {
-      // console.log(target.scrollTop);
       setScrollLock(false);
     }
     const eduTop = education.current.getBoundingClientRect().top;
@@ -196,9 +197,6 @@ const FinalComponent = ({ setScrollLock }) => {
   };
 
   const viewCertification = () => {
-    // console.log("viewcert");
-    // console.log(certification.current);
-    // setEduStick(false);
     if (certification.current) {
       certification.current.scrollIntoView({
         behavior: "smooth",

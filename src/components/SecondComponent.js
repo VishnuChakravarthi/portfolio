@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-// import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-// import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import headshot from "../img/owner.jpg";
-import InfoModal from "./InfoModal";
-import Certification from "./Certification";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,14 +64,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SecondComponent = ({ scrollLock, setScrollLock }) => {
+const SecondComponent = ({ setScrollLock }) => {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
-
-  // const modalOpen = () => {
-  //   setOpen(true);
-  //   setScrollLock(true);
-  // };
 
   return (
     <div className="component second-component">
@@ -110,15 +100,6 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
                 core web design.
               </Typography>
             </CardContent>
-            {/* <CardActions>
-              <Button
-                size="small"
-                onClick={() => modalOpen()}
-                style={{ fontSize: 14 }}
-              >
-                Learn More
-              </Button>
-            </CardActions> */}
           </Card>
         </Grid>
         <Grid className={classes.root} item xs={12} sm>
@@ -129,17 +110,6 @@ const SecondComponent = ({ scrollLock, setScrollLock }) => {
           </Card>
         </Grid>
       </Grid>
-      {open ? (
-        <InfoModal
-          heading="Education & Training"
-          open={open}
-          setOpen={setOpen}
-          setScrollLock={setScrollLock}
-        >
-          {/* <Education /> */}
-          <Certification />
-        </InfoModal>
-      ) : null}
     </div>
   );
 };

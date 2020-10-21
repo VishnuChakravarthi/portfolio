@@ -3,7 +3,7 @@ import ReactPageScroller from "react-page-scroller";
 import Drawer from "./AppDrawer";
 import FirstComponent from "./FirstComponent";
 import SecondComponent from "./SecondComponent";
-// import ThirdComponent from "../draft/ThirdComponent2";
+import TechComponent from "./TechComponent";
 // import ThirdComponent from "./ThirdComponent";
 // import FourthComponent from "./FourthComponent";
 import FinalComponent from "./FinalComponent";
@@ -22,7 +22,7 @@ const App = () => {
 
         <SecondComponent setScrollLock={setScrollLock} />
 
-        {/* <ThirdComponent setScrollLock={setScrollLock} /> */}
+        <TechComponent setScrollLock={setScrollLock} />
         {/* <ThirdTest setScrollLock={setScrollLock} /> */}
 
         {/* <FourthComponent setScrollLock={setScrollLock} /> */}
