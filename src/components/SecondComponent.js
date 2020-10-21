@@ -69,7 +69,7 @@ const SecondComponent = ({ setScrollLock }) => {
 
   return (
     <div className="component second-component">
-      <Grid container spacing={2}>
+      <Grid container spacing={2} onTouchStart={() => setScrollLock(false)}>
         <Grid className={classes.root} item xs={12} sm>
           <Card className={classes.card}>
             <CardContent className={classes.cardcontent}>
