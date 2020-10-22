@@ -262,14 +262,7 @@ const FinalComponent = ({ setScrollLock }) => {
           </Grid>
         </Grid>
         <Grid container spacing={2} className={classes.root}>
-          <Grid
-            item
-            xs={12}
-            sm
-            ref={project}
-
-            // className={projStick === "touched" ? classes.headerFloat : ""}
-          >
+          <Grid item xs={12} sm ref={project}>
             {projStick ? (
               <Typography
                 variant="h5"
