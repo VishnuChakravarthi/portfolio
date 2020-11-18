@@ -27,6 +27,15 @@ export const projectdata = [
     Href: "https://dictionary-app.vercel.app/",
   },
   {
+    Name: "School Management",
+    Caption: "Website for students and staff to use",
+    Languages: "React Node",
+    tags: "reactjs nodejs",
+    ItemName: "School MAnagement App",
+    Image: schoolWS,
+    Href: "https://school-management-theta.vercel.app/",
+  },
+  {
     Name: "Image App",
     Caption: "Displaying image from external api",
     Languages: "React Redux",
