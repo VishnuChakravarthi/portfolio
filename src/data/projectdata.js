@@ -5,8 +5,18 @@ import seasonWS from "../img/seasonWS.jpg";
 import ytWS from "../img/ytWS.jpg";
 import dictionaryWS from "../img/dictionaryWS.png";
 import twitchWS from "../img/twitchWS.png";
+import amazonWS from "../img/amazonWS.png";
 
 export const projectdata = [
+  {
+    Name: "Amazon Clone",
+    Caption: "Exact clone of Amazon with payment integration",
+    Languages: "React Firebase",
+    tags: "reactjs nodejs",
+    ItemName: "Amazon clone App",
+    Image: amazonWS,
+    Href: "https://clone-c9d80.web.app/",
+  },
   {
     Name: "Dictionary App",
     Caption: "Adding and viewing words from Oxford Api",
