@@ -6,6 +6,7 @@ import ytWS from "../img/ytWS.jpg";
 import dictionaryWS from "../img/dictionaryWS.png";
 import twitchWS from "../img/twitchWS.png";
 import amazonWS from "../img/amazonWS.png";
+import schoolWS from "../img/schoolWS.png";
 
 export const projectdata = [
   {
